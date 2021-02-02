@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from home.views import show_all
+from home.views import show_all, add_student_with_form
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('students/', show_all, name = 'student_list'),
+    path('students/form/create', add_student_with_form, name = 'add_new_student_with_form'),
 ]

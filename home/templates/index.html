@@ -18,8 +18,14 @@
     <li><b>Description:</b> {{ student.description }}</li>
     <li><b>Birthday:</b> {{ student.birthday }}</li>
     <li><b>Email:</b> {{ student.email }}</li>
-    {% endfor %}}
+    {% endfor %}
 </ul>
+
+<form method="POST" action="students">
+    {{ form }}
+
+</form>
+
 
 </body>
 </html>
