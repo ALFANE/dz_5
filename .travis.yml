@@ -10,7 +10,8 @@ python:
   - "3.9"
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - pip install -r prequirements.txt
+  - pip install .
 # command to run tests
 script:
   - flake8 ./
